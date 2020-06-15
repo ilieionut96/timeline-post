@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Timeline post task</title>
+</head>
+<body>
+    <div class="widget">
+        <div class="intro-area">
+            <span> Simple Post Widget <span>
+        </div>
+        
+        <div class="add-photo-video">
+            <label for="upload-button" class="upload-button"> <i class="fas fa-photo-video"></i> Add Photo/Video </label>
+            <input  type="file" id="upload-button" class="hidden-input" accept="image/*, video/*" multiple>
+        </div>
+
+        <div class="text-zone">
+            <div class="text-img-zone">
+                <textarea type="text" id="text-zone" name="textZone" class="text-zone" maxlength="500" placeholder="Write something..."></textarea>
+                <div id="image-preview"></div>
+            </div>
+            <div id="char-num"> Characters remaining: 500 </div>
+        </div>
+        
+        <div class="button-zone"></div>
+            <input type="button" id="create-post" value="Post"></input>
+        </div>
+    </div>
+    
+    <div class="result-box"></div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+    <script async type="text/javascript" src="app.js"></script>
+</body>
+</html>
